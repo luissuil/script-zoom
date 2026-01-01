@@ -1,0 +1,15 @@
+{
+  "name": "script-zoom",
+  "version": "1.0.0",
+  "description": "Servidor webhook que escucha eventos de grabaciones completadas de Zoom, descarga la transcripción y usa OpenAI (gpt-4o-mini) para extraer las tareas mencionadas en la reunión.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "openai": "^6.15.0"
+  }
+}
